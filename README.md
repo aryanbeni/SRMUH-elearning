@@ -1,18 +1,54 @@
-# srmuh_elearning
+# SRMUH-e-Learning
 
-All-in-one educational platform for students of SRM University, Delhi-NCR.
+A comprehensive Flutter application for SRM University students providing academic resources, university information, and event management.
+
+[//]: # (![App Screenshot]&#40;screenshots/login_screen.png&#41; <!-- Add actual screenshot path later -->)
+
+## Features
+
+- **Academic Resources**
+    - Notes repository organized by department/year/subject
+    - Previous year question papers with solutions
+    - E-books and reference materials
+
+- **University Information**
+    - Department details (faculty, labs, research)
+    - Campus facilities information
+    - Interactive campus map
+
+- **Event Management**
+    - University event calendar
+    - Workshop/seminar announcements
+    - Cultural fest details
+
+- **User System**
+    - Secure authentication (email/password)
+    - Google sign-in option
+    - Password recovery
+
+## Technologies Used
+
+- **Frontend**: Flutter (Dart)
+- **Backend**: Firebase (Authentication, Firestore, Storage)
+- **State Management**: Provider
+- **Additional Packages**:
+    - tab_container: For tabbed interfaces
+    - firebase_core: Firebase integration
+    - firebase_auth: Authentication
+    - cloud_firestore: Database
+    - google_sign_in: Google authentication
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK (version 3.0.0 or higher)
+- Dart SDK (version 2.17.0 or higher)
+- Firebase account (for backend services)
+- Android Studio/Xcode (for emulator/simulator)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# SRMUH-elearning
-# SRMUH-elearning
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aryanbeni/SRMUH-e-Learning.git
