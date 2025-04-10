@@ -30,7 +30,7 @@ A comprehensive Flutter application for SRM University students providing academ
 
 - **Frontend**: Flutter (Dart)
 - **Backend**: Firebase (Authentication, Firestore, Storage)
-- **State Management**: Provider
+- **State Management**: Bloc
 - **Additional Packages**:
     - tab_container: For tabbed interfaces
     - firebase_core: Firebase integration
@@ -51,4 +51,4 @@ A comprehensive Flutter application for SRM University students providing academ
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aryanbeni/SRMUH-e-Learning.git
+   git clone https://github.com/aryanbeni/SRMUH-elearning.git
