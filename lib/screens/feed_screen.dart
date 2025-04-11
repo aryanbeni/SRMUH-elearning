@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constants/app_color.dart';
+
 class FeedScreen extends StatefulWidget {
   const FeedScreen({super.key});
 
@@ -11,10 +13,8 @@ class _FeedScreenState extends State<FeedScreen> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Center(
-        child: Container(height: 10,
-        width: 10,
-        color: Colors.brown,),
+      appBar: AppBar(backgroundColor: AppColors.mainAppColor,
+        title: const Center(child: Text('Feeds',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
       ),
     );
   }

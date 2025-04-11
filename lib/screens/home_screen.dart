@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: AppColors.mainAppColor,
-        title: const Center(child: Text('SRMUH e-Learning',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
+        title: const Center(child: Text('SRMH One',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),)),
       ),
     );
   }
