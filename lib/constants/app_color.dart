@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 class AppColors {
   static Color mainAppColor = const Color(0xFF1A237E);
-  static Color buttonColor = const Color(0xffFF6F00);
+  static Color buttonColor = const Color(0xffc5c7d7);
+  static Color subbuttonColor = const Color(0xffFF6F00);
+
 
   static Color pullToRefreshText = const Color(0xFF0862BC);
   static Color pullToRefreshTextBackground = const Color(0xFFECF6FE);

@@ -42,32 +42,32 @@ class _MoreScreenState extends State<MoreScreen> {
                 color: AppColors.mainAppColor,
                 borderRadius: BorderRadius.circular(25),
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: const Icon(Icons.person,color: Colors.white),
+              child: const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Icon(Icons.person,color: Colors.white),
               ),
             ),
-            title: Text('aryan',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
-            subtitle: Text('wertjkjrtyuigdfgjkklkjh'),
+            title:  Text('aryan',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18),),
+            subtitle:  Text('wertjkjrtyuigdfgjkklkjh'),
             onTap: () {},
           ),
-        Padding(
-          padding: const EdgeInsets.all(12.0),
+        const Padding(
+          padding: EdgeInsets.all(12.0),
           child: Text('Extras'),
         ),
         _buildListTile(Icons.bookmark, 'Bookmark', 'Manage your bookmarked'),
           _buildListTile(Icons.menu, 'Your Material', 'All of your uploaded material'),
           _buildListTile(Icons.leaderboard, 'Achievements', 'Explore admin'),
           _buildListTile(Icons.link, 'Useful Links', 'All usefull links'),
-          Padding(
-          padding: const EdgeInsets.all(12.0),
+          const Padding(
+          padding: EdgeInsets.all(12.0),
           child: Text('SRMUH'),
         ),
           _buildListTile(Icons.public, 'TPO', 'Training and Placement'),
           _buildListTile(Icons.school, 'Teachers', 'All teachers of SRMUH'),
           _buildListTile(Icons.map, 'SRMUH campus', 'Visit college campus'),
-          Padding(
-          padding: const EdgeInsets.all(12.0),
+          const Padding(
+          padding: EdgeInsets.all(12.0),
           child: Text('Utilities'),
         ),
           _buildListTile(Icons.group, 'SELS', 'All SELS members'),

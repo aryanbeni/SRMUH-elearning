@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.mainAppColor,
+      backgroundColor: AppColors.buttonColor,
       body:
       SafeArea(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,
@@ -31,11 +31,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   // borderRadius: BorderRadius.circular(20)
                 // ),
                 child: TabContainer(
-                  color: Color(0xFFFAFAFA),
-                  // color: Color(0xFF1A237E),
-                  tabs: [
-                    Text('Sign In',style: TextStyle(color: AppColors.buttonColor,fontWeight: FontWeight.bold,fontSize: 25),),
-                    Text('Sign Up',style: TextStyle(color: AppColors.buttonColor,fontWeight: FontWeight.bold,fontSize: 25),),
+                  color: const Color(0xFFFAFAFA),
+                  tabs:  [
+                    Text('Sign In',style: TextStyle(color: AppColors.kPureBlack,fontWeight: FontWeight.bold,fontSize: 25),),
+                    Text('Sign Up',style: TextStyle(color: AppColors.kPureBlack,fontWeight: FontWeight.bold,fontSize: 25),),
                   ],
                   children: [
                     Container(
@@ -49,15 +48,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             TextField(
                             keyboardType: TextInputType.emailAddress,
                             decoration: InputDecoration(
-                              fillColor: AppColors.buttonColor.withOpacity(0.1),
+                              fillColor: AppColors.mainAppColor.withOpacity(0.1),
                               filled: true,
                               hintText: 'Email',
                               focusedBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(25)),
+                                  borderRadius: BorderRadius.circular(15)),
                               prefixIcon: const Icon(Icons.mail),
                               focusColor: Colors.white,
                               enabledBorder: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(25),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                             ),
                           ),
@@ -66,14 +65,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               keyboardType: TextInputType.visiblePassword,
                               obscureText: passwordVisible,
                               decoration: InputDecoration(
-                                fillColor: AppColors.buttonColor.withOpacity(0.1),
+                                fillColor: AppColors.mainAppColor.withOpacity(0.1),
                                 filled: true,
                                 hintText: 'Password',
                                 border: const OutlineInputBorder(
                                   borderSide: BorderSide(color: Colors.white),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25)),
+                                    borderRadius: BorderRadius.circular(15)),
                                 prefixIcon: const Icon(Icons.lock),
                                 suffixIcon: IconButton(
                                   icon: Icon(passwordVisible
@@ -88,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   },
                                 ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(25),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
                             ),
@@ -104,8 +103,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: Container(
                                 width: double.infinity,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: AppColors.buttonColor,
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: AppColors.mainAppColor,
                                 ),
                                 child: const Center(child: Padding(
                                   padding: EdgeInsets.symmetric(vertical: 6.0),
@@ -132,8 +131,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Container(
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    color: AppColors.buttonColor,
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: AppColors.mainAppColor,
                                   ),
                                   child: const Center(child: Padding(
                                     padding: EdgeInsets.symmetric(vertical: 6.0),
@@ -160,15 +159,15 @@ class _LoginScreenState extends State<LoginScreen> {
                             TextField(
                               keyboardType: TextInputType.emailAddress,
                               decoration: InputDecoration(
-                                fillColor: AppColors.buttonColor.withOpacity(0.1),
+                                fillColor: AppColors.mainAppColor.withOpacity(0.1),
                                 filled: true,
                                 hintText: 'Email',
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25)),
+                                    borderRadius: BorderRadius.circular(15)),
                                 prefixIcon: const Icon(Icons.mail),
                                 focusColor: Colors.white,
                                 enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(25),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
                             ),
@@ -177,14 +176,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               keyboardType: TextInputType.visiblePassword,
                               obscureText: passwordVisible,
                               decoration: InputDecoration(
-                                fillColor: AppColors.buttonColor.withOpacity(0.1),
+                                fillColor: AppColors.mainAppColor.withOpacity(0.1),
                                 filled: true,
                                 hintText: 'Password',
                                 border: const OutlineInputBorder(
                                   borderSide: BorderSide(color: Colors.white),
                                 ),
                                 focusedBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25)),
+                                    borderRadius: BorderRadius.circular(15)),
                                 prefixIcon: const Icon(Icons.lock),
                                 suffixIcon: IconButton(
                                   icon: Icon(passwordVisible
@@ -199,7 +198,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   },
                                 ),
                                 enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(25),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                               ),
                             ),
@@ -209,8 +208,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: Container(
                                 width: double.infinity,
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(20),
-                                  color: AppColors.buttonColor,
+                                  borderRadius: BorderRadius.circular(12),
+                                  color: AppColors.mainAppColor,
                                 ),
                                 child: const Center(child: Padding(
                                   padding: EdgeInsets.symmetric(vertical: 6.0),
@@ -237,8 +236,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 child: Container(
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(20),
-                                    color: AppColors.buttonColor,
+                                    borderRadius: BorderRadius.circular(12),
+                                    color: AppColors.mainAppColor,
                                   ),
                                   child: const Center(child: Padding(
                                     padding: EdgeInsets.symmetric(vertical: 6.0),
